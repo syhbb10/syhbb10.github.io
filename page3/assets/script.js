@@ -1,15 +1,23 @@
 $(document).ready(function(){
 
 $(".fam-item").click(function() {
- $("#modal-container").show();
+ $(this).addClass("highlight");
 });
 
-$(".fr-item").click(function() {
- $("#modal-container").show();
+
+$(".fam-item").click(function () {
+ if (!$("#modal-container").hasClass("modal-active")) {
+ $("#modal-container").addClass("modal-active");
+ }
+ else {
+  $("#modal-container").removeClass("modal-active")
+ }
 });
 
-$(".fam-item").hover(function(){
-    $(this).css("border", "pink");
-    }
+
+$(".fam-item").click(function() {
+ $(this).addClass("highlight");
+});
+
 });
 });
