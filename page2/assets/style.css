@@ -154,7 +154,7 @@ body {
 #modal-box {
     width: 640px;
     height: 460px;
-    background-color: #5485BB;
+    background-color: #C4C4C4;
     position: absolute;
     z-index: 100;
     top: calc(50% - 26.5%);
